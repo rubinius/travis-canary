@@ -1,0 +1,2 @@
+Checks that the Travis Rubinius labels are working and that RVM is installing
+the correct version.
