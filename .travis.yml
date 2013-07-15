@@ -9,7 +9,7 @@ notifications:
     on_failure: always
 matrix:
   exclude:
-    - rvm: 1.9.3
+    - rvm: ""
   include:
     - rvm: rbx-18mode
       env: RBX_RUBY_COMPAT=1.8.7
