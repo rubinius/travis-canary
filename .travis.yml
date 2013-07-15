@@ -8,6 +8,8 @@ notifications:
     on_success: change
     on_failure: always
 matrix:
+  exclude:
+    - rvm: 1.9.3
   include:
     - rvm: rbx-10.0.0
       env: RBX_RUBY_COMPAT=2.0.0
