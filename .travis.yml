@@ -7,33 +7,7 @@ notifications:
   email:
     on_success: change
     on_failure: always
-rvm:
-  - rbx-18mode
-  - rbx-19mode
-  - rbx-20mode
-  - rbx-nightly-18mode
-  - rbx-nightly-19mode
-  - rbx-nightly-20mode
-  - rbx-weekly-18mode
-  - rbx-weekly-19mode
-  - rbx-weekly-20mode
-  - rbx-monthly-18mode
-  - rbx-monthly-19mode
-  - rbx-monthly-20mode
 matrix:
-  exclude:
-    - rvm: rbx-18mode
-    - rvm: rbx-19mode
-    - rvm: rbx-20mode
-    - rvm: rbx-nightly-18mode
-    - rvm: rbx-nightly-19mode
-    - rvm: rbx-nightly-20mode
-    - rvm: rbx-weekly-18mode
-    - rvm: rbx-weekly-19mode
-    - rvm: rbx-weekly-20mode
-    - rvm: rbx-monthly-18mode
-    - rvm: rbx-monthly-19mode
-    - rvm: rbx-monthly-20mode
   include:
     - rvm: rbx-18mode
       env: RBX_RUBY_COMPAT=1.8.7
