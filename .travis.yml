@@ -9,11 +9,19 @@ notifications:
     on_failure: always
 matrix:
   include:
+    - rvm: rbx-10.0.0
+      env: RBX_RUBY_COMPAT=2.0.0
     - rvm: rbx-18mode
       env: RBX_RUBY_COMPAT=1.8.7
     - rvm: rbx-19mode
       env: RBX_RUBY_COMPAT=1.9.3
     - rvm: rbx-20mode
+      env: RBX_RUBY_COMPAT=2.0.0
+    - rvm: rbx-rc1-18mode
+      env: RBX_RUBY_COMPAT=1.8.7
+    - rvm: rbx-rc1-19mode
+      env: RBX_RUBY_COMPAT=1.9.3
+    - rvm: rbx-rc1-20mode
       env: RBX_RUBY_COMPAT=2.0.0
     - rvm: rbx-nightly-18mode
       env: RBX_RUBY_COMPAT=1.8.7
