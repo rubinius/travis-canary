@@ -21,6 +21,19 @@ rvm:
   - rbx-monthly-19mode
   - rbx-monthly-20mode
 matrix:
+  exclude:
+    - rvm: rbx-18mode
+    - rvm: rbx-19mode
+    - rvm: rbx-20mode
+    - rvm: rbx-nightly-18mode
+    - rvm: rbx-nightly-19mode
+    - rvm: rbx-nightly-20mode
+    - rvm: rbx-weekly-18mode
+    - rvm: rbx-weekly-19mode
+    - rvm: rbx-weekly-20mode
+    - rvm: rbx-monthly-18mode
+    - rvm: rbx-monthly-19mode
+    - rvm: rbx-monthly-20mode
   include:
     - rvm: rbx-18mode
       env: RBX_RUBY_COMPAT=1.8.7
