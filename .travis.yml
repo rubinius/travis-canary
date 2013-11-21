@@ -14,10 +14,10 @@ matrix:
     - rvm: 1.9.3
   include:
     - rvm: rbx-2.2.1
-      env: RBX_RUBY_COMPAT=2.2.1
+      env: RBX_RUBY_COMPAT=2.1.0
     - rvm: rbx-2.2
-      env: RBX_RUBY_COMPAT=2.2.1
+      env: RBX_RUBY_COMPAT=2.1.0
     - rvm: rbx-2
-      env: RBX_RUBY_COMPAT=2.2.1
+      env: RBX_RUBY_COMPAT=2.1.0
     - rvm: rbx
-      env: RBX_RUBY_COMPAT=2.2.1
+      env: RBX_RUBY_COMPAT=2.1.0
