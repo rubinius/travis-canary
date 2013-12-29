@@ -13,11 +13,13 @@ matrix:
   exclude:
     - rvm: 1.9.3
   include:
+    - rvm: rbx-2.2.3
+      env: RBX_RUBY_COMPAT=2.1.0 RBX_VERSION=2.2.3
     - rvm: rbx-2.2.2
       env: RBX_RUBY_COMPAT=2.1.0 RBX_VERSION=2.2.2
     - rvm: rbx-2.2
-      env: RBX_RUBY_COMPAT=2.1.0 RBX_VERSION=2.2.2
+      env: RBX_RUBY_COMPAT=2.1.0 RBX_VERSION=2.2.3
     - rvm: rbx-2
-      env: RBX_RUBY_COMPAT=2.1.0 RBX_VERSION=2.2.2
+      env: RBX_RUBY_COMPAT=2.1.0 RBX_VERSION=2.2.3
     - rvm: rbx
       env: RBX_RUBY_COMPAT=2.1.0 RBX_VERSION=2.2.2
