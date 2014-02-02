@@ -17,13 +17,9 @@ matrix:
       env: RBX_RUBY_COMPAT=10.0.0 RBX_VERSION=10.0.0
     - rvm: rbx-2.2.4
       env: RBX_RUBY_COMPAT=2.1.0 RBX_VERSION=2.2.4
-    - rvm: rbx-2.2.3
-      env: RBX_RUBY_COMPAT=2.1.0 RBX_VERSION=2.2.3
-    - rvm: rbx-2.2.2
-      env: RBX_RUBY_COMPAT=2.1.0 RBX_VERSION=2.2.2
     - rvm: rbx-2.2
-      env: RBX_RUBY_COMPAT=2.1.0 RBX_VERSION=2.2.3
+      env: RBX_RUBY_COMPAT=2.1.0 RBX_VERSION=2.2.4
     - rvm: rbx-2
-      env: RBX_RUBY_COMPAT=2.1.0 RBX_VERSION=2.2.3
+      env: RBX_RUBY_COMPAT=2.1.0 RBX_VERSION=2.2.4
     - rvm: rbx
-      env: RBX_RUBY_COMPAT=2.1.0 RBX_VERSION=2.2.2
+      env: RBX_RUBY_COMPAT=2.1.0 RBX_VERSION=2.2.4
