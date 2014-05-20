@@ -15,11 +15,11 @@ matrix:
   include:
     - rvm: rbx-10.0.0
       env: RBX_RUBY_COMPAT=10.0.0 RBX_VERSION=10.0.0
-    - rvm: rbx-2.2.4
-      env: RBX_RUBY_COMPAT=2.1.0 RBX_VERSION=2.2.4
+    - rvm: rbx-2.2.7
+      env: RBX_RUBY_COMPAT=2.1.0 RBX_VERSION=2.2.7
     - rvm: rbx-2.2
-      env: RBX_RUBY_COMPAT=2.1.0 RBX_VERSION=2.2.4
+      env: RBX_RUBY_COMPAT=2.1.0 RBX_VERSION=2.2.7
     - rvm: rbx-2
-      env: RBX_RUBY_COMPAT=2.1.0 RBX_VERSION=2.2.4
+      env: RBX_RUBY_COMPAT=2.1.0 RBX_VERSION=2.2.7
     - rvm: rbx
-      env: RBX_RUBY_COMPAT=2.1.0 RBX_VERSION=2.2.4
+      env: RBX_RUBY_COMPAT=2.1.0 RBX_VERSION=2.2.7
