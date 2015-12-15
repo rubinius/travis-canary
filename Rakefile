@@ -1,5 +1,5 @@
 task :default do
-  re = /^rubinius\s(\d+\.\d+\.\d+)(\.n\d+)?\s\(#{ENV["RBX_RUBY_COMPAT"]}\s[0-9a-f]{8}\s\d{4}-\d{2}-\d{2}\s(JI)?\)\s\[[^\]]+\]$/
+  re = /^rubinius\s(\d+\.\d+(\.\d+)?)(\.c\d+)?\s\(#{ENV["RBX_RUBY_COMPAT"]}\s[0-9a-f]{8}\s\d{4}-\d{2}-\d{2}\s(JI)?\)\s\[[^\]]+\]$/
 
   version = `rbx -v`.chomp
   m = re.match version
