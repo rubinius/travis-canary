@@ -1,5 +1,4 @@
 language: ruby
-dist: trusty
 script: rake
 notifications:
   recipients:
