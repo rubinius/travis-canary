@@ -1,20 +1,25 @@
 language: ruby
 script: rake
 notifications:
-  recipients:
-    - brixen@gmail.com
-  email:
+  email: false
+  webhooks:
+    urls:
+    - https://webhooks.gitter.im/e/9502afd22ca6c8e85fb3
     on_success: change
     on_failure: always
+    on_start: always
+os:
+- linux
+- osx
 rvm:
-  - 2.0.0
+- 2.0.0
 matrix:
   exclude:
-    - rvm: 2.0.0
+  - rvm: 2.0.0
   include:
-    - rvm: rbx-3.20
-      env: RBX_RUBY_COMPAT=2.2.2 RBX_VERSION=3.20
-    - rvm: rbx-3
-      env: RBX_RUBY_COMPAT=2.2.2 RBX_VERSION=3.20
-    - rvm: rbx
-      env: RBX_RUBY_COMPAT=2.2.2 RBX_VERSION=3.20
+  - rvm: rbx-3.20
+    env: RBX_RUBY_COMPAT=2.2.2 RBX_VERSION=3.20
+  - rvm: rbx-3
+    env: RBX_RUBY_COMPAT=2.2.2 RBX_VERSION=3.20
+  - rvm: rbx
+    env: RBX_RUBY_COMPAT=2.2.2 RBX_VERSION=3.20
