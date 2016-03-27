@@ -19,7 +19,19 @@ matrix:
   include:
   - rvm: rbx-3.20
     env: RBX_RUBY_COMPAT=2.2.2 RBX_VERSION=3.20
+    os: linux
   - rvm: rbx-3
     env: RBX_RUBY_COMPAT=2.2.2 RBX_VERSION=3.20
+    os: linux
   - rvm: rbx
     env: RBX_RUBY_COMPAT=2.2.2 RBX_VERSION=3.20
+    os: linux
+  - rvm: rbx-3.20
+    env: RBX_RUBY_COMPAT=2.2.2 RBX_VERSION=3.20
+    os: osx
+  - rvm: rbx-3
+    env: RBX_RUBY_COMPAT=2.2.2 RBX_VERSION=3.20
+    os: osx
+  - rvm: rbx
+    env: RBX_RUBY_COMPAT=2.2.2 RBX_VERSION=3.20
+    os: osx
