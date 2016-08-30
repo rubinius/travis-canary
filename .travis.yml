@@ -1,4 +1,6 @@
 language: ruby
+sudo: required
+dist: trusty
 script: rake
 notifications:
   email: false
@@ -18,20 +20,20 @@ matrix:
   - rvm: 2.0.0
   include:
   - rvm: rbx-3.56
-    env: RBX_RUBY_COMPAT=2.2.2 RBX_VERSION=3.56
+    env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=3.56
     os: linux
   - rvm: rbx-3
-    env: RBX_RUBY_COMPAT=2.2.2 RBX_VERSION=3.56
+    env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=3.56
     os: linux
   - rvm: rbx
-    env: RBX_RUBY_COMPAT=2.2.2 RBX_VERSION=3.56
+    env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=3.56
     os: linux
   - rvm: rbx-3.56
-    env: RBX_RUBY_COMPAT=2.2.2 RBX_VERSION=3.56
+    env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=3.56
     os: osx
   - rvm: rbx-3
-    env: RBX_RUBY_COMPAT=2.2.2 RBX_VERSION=3.56
+    env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=3.56
     os: osx
   - rvm: rbx
-    env: RBX_RUBY_COMPAT=2.2.2 RBX_VERSION=3.56
+    env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=3.56
     os: osx
