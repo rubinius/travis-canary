@@ -32,3 +32,11 @@ matrix:
   - rvm: rbx-3
     env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=3.107
     os: osx
+  allow_failures:
+  - rvm: rbx-3.107
+    env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=3.107
+    os: osx
+  - rvm: rbx-3
+    env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=3.107
+    os: osx
+      
