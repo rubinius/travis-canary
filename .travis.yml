@@ -1,7 +1,8 @@
 language: ruby
-sudo: required
+
 dist: trusty
 script: rake
+
 notifications:
   email: false
   webhooks:
@@ -19,21 +20,23 @@ matrix:
   exclude:
   - rvm: 2.0.0
   include:
-  - rvm: rbx-3.100
-    env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=3.100
+  - rvm: rbx-3.107
+    env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=3.107
     os: linux
   - rvm: rbx-3
-    env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=3.100
+    env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=3.107
     os: linux
-  - rvm: rbx
-    env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=3.100
-    os: linux
-  - rvm: rbx-3.100
-    env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=3.100
+  - rvm: rbx-3.107
+    env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=3.107
     os: osx
   - rvm: rbx-3
-    env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=3.100
+    env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=3.107
     os: osx
-  - rvm: rbx
-    env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=3.100
+  allow_failures:
+  - rvm: rbx-3.107
+    env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=3.107
     os: osx
+  - rvm: rbx-3
+    env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=3.107
+    os: osx
+      

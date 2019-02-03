@@ -1,5 +1,5 @@
 task :default do
-  re = /^rubinius\s(\d+\.\d+(\.\d+)?)(\.c\d+)?\s\((\d+\.\d+\.\d+)\s[0-9a-f]{8}\s\d{4}-\d{2}-\d{2}\s\d+\.\d+(\.\d+)?(\sJ?I?C?D?)?\)\s\[[^\]]+\]$/
+  re = /^rubinius\s(\d+\.\d+(\.\d+)?)(\.c\d+)?\s\((\d+\.\d+\.\d+)\s[0-9a-f]{8}\s\d{4}-\d{2}-\d{2}\s\d+\.\d+(\.\d+)?(?:git\-[0-9a-f]{7})?(\sJ?I?C?D?)?\)\s\[[^\]]+\]$/
 
   rbx_version = `rbx -v`.chomp
   m = re.match rbx_version
