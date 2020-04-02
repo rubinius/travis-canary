@@ -9,22 +9,17 @@ notifications:
     on_success: change
     on_failure: always
     on_start: always
-os:
-- linux
-- osx
-rvm:
-- 2.0.0
+
 matrix:
-  exclude:
-  - rvm: 2.0.0
   include:
-  - rvm: rbx-4
-    env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=4.4
-    os: linux
-  - rvm: rbx-4
-    env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=4.4
-    os: osx
+    - rvm: rbx-4
+      env: RBX_RUBY_COMPAT=10.0 RBX_VERSION=4.15
+      os: linux
+      name: Rubinius 4 on Linux
+      dist: trusty
+    - rvm: rbx-4
+      env: RBX_RUBY_COMPAT=10.0 RBX_VERSION=4.15
+      os: osx
+      name: Rubinius 4 on macOS
   allow_failures:
-  - rvm: rbx-4
-    env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=4.4
-    os: osx
+    - name: Rubinius 4 on macOS
