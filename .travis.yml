@@ -16,6 +16,7 @@ matrix:
       env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=4.4
       os: linux
       name: Rubinius 4 on Linux
+      dist: trusty
     - rvm: rbx-4
       env: RBX_RUBY_COMPAT=2.3.1 RBX_VERSION=4.4
       os: osx
